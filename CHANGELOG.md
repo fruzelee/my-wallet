@@ -8,3 +8,4 @@ All notable changes to this project will be documented in this file.
 - chore: add CHANGELOG.md to track notable project changes
 - chore: update .gitignore file with Android template
 - feat: add project dependencies to build.gradle
+- feat: add view binding support
