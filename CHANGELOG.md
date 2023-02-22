@@ -9,3 +9,4 @@ All notable changes to this project will be documented in this file.
 - chore: update .gitignore file with Android template
 - feat: add project dependencies to build.gradle
 - feat: add view binding support
+- feat: upgrade project dependencies in build.gradle
