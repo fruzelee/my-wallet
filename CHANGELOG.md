@@ -11,3 +11,5 @@ All notable changes to this project will be documented in this file.
 - feat: add view binding support
 - feat: upgrade project dependencies in build.gradle
 - feat: create navigation graph in navigation folder
+- feat: include FragmentContainerView in main activity layout
+
