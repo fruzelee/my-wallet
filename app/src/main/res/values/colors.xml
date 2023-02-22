@@ -10,4 +10,9 @@
     <color name="red">#d32f2f</color>
     <color name="grey">#a9a9a9</color>
     <color name="transparent">#00000000</color>
+    <color name="background_color">#FFFFFFFF</color>
+    <color name="hint_color">#75808A</color>
+    <color name="color_disabled">#DBB6FF</color>
+    <color name="color_enabled">#6E50FF</color>
+    <color name="currency_color">#575B62</color>
 </resources>

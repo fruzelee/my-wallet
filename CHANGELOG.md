@@ -14,5 +14,5 @@ All notable changes to this project will be documented in this file.
 - feat: include FragmentContainerView in main activity layout
 - feat: integrate custom pin view library
 - feat: create UserLoginFragment
-
+- feat: update UI/UX of user login
 
