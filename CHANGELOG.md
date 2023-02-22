@@ -10,3 +10,4 @@ All notable changes to this project will be documented in this file.
 - feat: add project dependencies to build.gradle
 - feat: add view binding support
 - feat: upgrade project dependencies in build.gradle
+- feat: create navigation graph in navigation folder
