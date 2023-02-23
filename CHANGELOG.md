@@ -74,3 +74,8 @@ WalletService class is a useful tool for managing the login process and handling
 occur during the process. This change will make the code more modular and easier to maintain.
 Developers can now use the WalletService class to handle login-related functionality without the
 need to modify existing code.
+
+- feat: Add UserLoginRequestModel to user_login feature data layer
+
+This commit adds a new UserLoginRequestModel to the data layer of the user_login feature. The
+UserLoginRequestModel is a data class that contains the necessary data to perform a user login. 
