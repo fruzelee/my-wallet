@@ -75,7 +75,13 @@ occur during the process. This change will make the code more modular and easier
 Developers can now use the WalletService class to handle login-related functionality without the
 need to modify existing code.
 
-- feat: Add UserLoginRequestModel to user_login feature data layer
+- feat(user_login): Add UserLoginRequestModel to data layer
 
 This commit adds a new UserLoginRequestModel to the data layer of the user_login feature. The
-UserLoginRequestModel is a data class that contains the necessary data to perform a user login. 
+UserLoginRequestModel is a data class that contains the necessary data to perform a user login.
+
+- feat(user_login): add UserLoginEntity to data layer
+
+This commit adds the UserLoginEntity to the data layer for the user_login feature. The purpose of
+this entity is to handle user login-related data and operations. This feature enhancement will
+improve the functionality and reliability of the user login feature.
