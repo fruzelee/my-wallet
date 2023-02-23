@@ -49,3 +49,9 @@ This commit resolves an issue by using the @InstallIn annotation to specify the 
 of dependencies in the codebase. The annotation is used to define the component where the
 dependencies should be installed and made available for use.
 
+- feat: use SingletonComponent for singleton dependencies
+
+This commit uses the SingletonComponent to declare dependencies that should only have a single
+instance throughout the application. Since the app does not need multiple instances of these
+dependencies, using a singleton is more efficient. 
+
