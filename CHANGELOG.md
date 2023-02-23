@@ -41,5 +41,11 @@ application is going to be used to tell hilt to start generating code for us
 - feat: implement RepositoryModule class for Hilt dependency injection
 
 This commit adds a new class called RepositoryModule and implements it for Hilt dependency
-injection. The purpose of this class is to provide dependencies for the app using Hilt. 
+injection. The purpose of this class is to provide dependencies for the app using Hilt.
+
+- fix: use @InstallIn annotation to define dependency scope
+
+This commit resolves an issue by using the @InstallIn annotation to specify the scope or visibility
+of dependencies in the codebase. The annotation is used to define the component where the
+dependencies should be installed and made available for use.
 
