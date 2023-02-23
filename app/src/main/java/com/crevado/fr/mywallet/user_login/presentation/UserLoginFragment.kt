@@ -5,16 +5,20 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import com.crevado.fr.mywallet.R
+import com.crevado.fr.mywallet.databinding.FragmentUserLoginBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class UserLoginFragment : Fragment() {
+    private lateinit var binding: FragmentUserLoginBinding
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_user_login, container, false)
+        binding = FragmentUserLoginBinding.inflate(layoutInflater)
+        return binding.root
     }
 
 }

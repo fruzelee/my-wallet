@@ -33,4 +33,5 @@ All notable changes to this project will be documented in this file.
 - refactor: clean up UserLoginFragment
 - refactor(presentation): move UserLoginFragment to presentation layer within "user_login" feature
   for better organization and maintainability
+- feat: implement view binding for user login screen
 
