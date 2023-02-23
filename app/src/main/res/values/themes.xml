@@ -29,15 +29,6 @@
         <item name="android:textStyle">bold</item>
     </style>
 
-    <style name="MaterialButtonStyle" parent="Widget.MaterialComponents.Button.UnelevatedButton">
-        <item name="backgroundTint">@color/continue_btn_states</item>
-    </style>
-
-    <style name="MaterialButtonStyleMax" parent="Widget.MaterialComponents.Button.UnelevatedButton">
-        <item name="backgroundTint">@color/max_btn_states</item>
-        <item name="android:textColor">@color/continue_btn_states</item>
-    </style>
-
     <style name="shapeAppearanceOverlay.Circle" parent="">
         <item name="cornerFamily">rounded</item>
         <item name="cornerSize">50%</item>
