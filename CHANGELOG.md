@@ -31,4 +31,6 @@ All notable changes to this project will be documented in this file.
 - feat: implement AppApplication class for Hilt code generation
 - feat: configure Kotlin and Gradle for Android project
 - refactor: clean up UserLoginFragment
+- refactor(presentation): move UserLoginFragment to presentation layer within "user_login" feature
+  for better organization and maintainability
 

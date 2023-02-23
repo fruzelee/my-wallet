@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/userLoginFragment"
-        android:name="com.crevado.fr.mywallet.UserLoginFragment"
+        android:name="com.crevado.fr.mywallet.user_login.presentation.UserLoginFragment"
         android:label="UserLoginFragment" />
 
 </navigation>
