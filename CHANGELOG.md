@@ -53,5 +53,11 @@ dependencies should be installed and made available for use.
 
 This commit uses the SingletonComponent to declare dependencies that should only have a single
 instance throughout the application. Since the app does not need multiple instances of these
-dependencies, using a singleton is more efficient. 
+dependencies, using a singleton is more efficient.
+
+- feat: Add logging-interceptor dependency to build.gradle
+
+This commit adds a new dependency, logging-interceptor, to the build.gradle file. The
+logging-interceptor is a useful tool for logging network requests and responses, which will aid in
+debugging and monitoring network-related issues. 
 
