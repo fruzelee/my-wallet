@@ -29,3 +29,4 @@ All notable changes to this project will be documented in this file.
 - feat(send-fund): update UI for better user experience
 - chore: update the codebase to remove any resources that are no longer in use.
 - feat: implement AppApplication class for Hilt code generation
+- feat: configure Kotlin and Gradle for Android project
