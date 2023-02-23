@@ -4,21 +4,25 @@ All notable changes to this project will be documented in this file.
 
 # v1 (1.0)
 
-- feat: create initial boilerplate
-- chore: add CHANGELOG.md to track notable project changes
-- chore: update .gitignore file with Android template
-- feat: add project dependencies to build.gradle
-- feat: add view binding support
-- feat: upgrade project dependencies in build.gradle
-- feat: create navigation graph in navigation folder
-- feat: include FragmentContainerView in main activity layout
-- feat: integrate custom pin view library
-- feat: create UserLoginFragment
-- feat: update UI/UX of user login
-- feat: add SDP library for scalable size units
-- feat: add SSP library for scalable size units for texts
-- feat(login-ui): Update user login UI
-- feat(pin-library): Update pin view library
-- feat(login-layout-validation): login layout validation done
-- feat(screen-size): Add support for different screen sizes
+- feat: create initial boilerplate.
+- chore: add CHANGELOG.md to track notable project changes.
+- chore: update .gitignore file with Android template to ensure that irrelevant files are not
+  committed to the repository.
+- feat: add project dependencies to build.gradle file for the project.
+- feat: add view binding support to the project to simplify view references.
+- feat: upgrade project dependencies in build.gradle file to ensure compatibility with latest
+  versions.
+- feat: create a navigation graph in the navigation folder to simplify navigation flow of the app.
+- feat: include FragmentContainerView in main activity layout to enable fragment transactions.
+- feat: integrate custom pin view library into project for improved security and user experience.
+- feat: create UserLoginFragment for user login functionality.
+- feat: update UI/UX of user login for better usability.
+- feat: add SDP for scalable size units to ensure apps compatibility with different screen sizes.
+- feat: add SSP for scalable size units for texts to ensure apps compatibility with different screen
+  sizes.
+- feat(login-ui): update the user login UI for a better user experience.
+- feat(pin-library): updates the pin view library for improved security and usability.
+- feat(layout-validation):  add validation to login layout for better UI error handling and UX.
+- feat(screen-size): add support for different screen sizes to ensure compatibility across various
+  devices.
 
