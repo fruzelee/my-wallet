@@ -25,4 +25,5 @@ All notable changes to this project will be documented in this file.
 - feat(layout-validation):  add validation to login layout for better UI error handling and UX.
 - feat(screen-size): add support for different screen sizes to ensure compatibility across various
   devices.
+- feat(send-fund): add SendFundFragment
 
