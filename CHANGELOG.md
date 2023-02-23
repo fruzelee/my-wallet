@@ -29,9 +29,17 @@ All notable changes to this project will be documented in this file.
 - feat(send-fund): update UI for better user experience
 - chore: update the codebase to remove any resources that are no longer in use.
 - feat: implement AppApplication class for Hilt code generation
+
+This commit add a new AppApplication class and implement the application class on it, basically the
+application is going to be used to tell hilt to start generating code for us
+
 - feat: configure Kotlin and Gradle for Android project
 - refactor: clean up UserLoginFragment
 - refactor(presentation): move UserLoginFragment to presentation layer within "user_login" feature
   for better organization and maintainability
 - feat: implement view binding for user login screen
+- feat: implement RepositoryModule class for Hilt dependency injection
+
+This commit adds a new class called RepositoryModule and implements it for Hilt dependency
+injection. The purpose of this class is to provide dependencies for the app using Hilt. 
 
