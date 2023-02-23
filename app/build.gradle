@@ -85,6 +85,12 @@ dependencies {
     // https://mvnrepository.com/artifact/androidx.hilt/hilt-navigation-fragment
     implementation("androidx.hilt:hilt-navigation-fragment:1.0.0")
 
+    //SDP - a scalable size unit
+    implementation 'com.intuit.sdp:sdp-android:1.1.0'
+
+    //SSP - a scalable size unit for texts
+    implementation 'com.intuit.ssp:ssp-android:1.1.0'
+
 }
 
 // Allow references to generated code

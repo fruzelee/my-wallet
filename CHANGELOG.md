@@ -15,4 +15,6 @@ All notable changes to this project will be documented in this file.
 - feat: integrate custom pin view library
 - feat: create UserLoginFragment
 - feat: update UI/UX of user login
+- feat: add SDP library for scalable size units
+- feat: add SSP library for scalable size units for texts
 
