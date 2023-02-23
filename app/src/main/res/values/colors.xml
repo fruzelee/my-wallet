@@ -13,6 +13,12 @@
     <color name="background_color">#FFFFFFFF</color>
     <color name="hint_color">#75808A</color>
     <color name="color_disabled">#DBB6FF</color>
+    <color name="color_inactive_bar">#C8CCD2</color>
     <color name="color_enabled">#6E50FF</color>
+    <color name="color_btn">#6E50FF</color>
     <color name="currency_color">#575B62</color>
+
+    <color name="pinFieldLibraryAccent">#000000</color>
+    <color name="inactivePinFieldColor">#C8CCD2</color>
+    <color name="pinFieldLibraryTransparent">#00000000</color>
 </resources>

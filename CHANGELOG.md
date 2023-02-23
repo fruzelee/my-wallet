@@ -17,4 +17,8 @@ All notable changes to this project will be documented in this file.
 - feat: update UI/UX of user login
 - feat: add SDP library for scalable size units
 - feat: add SSP library for scalable size units for texts
+- feat(login-ui): Update user login UI
+- feat(pin-library): Update pin view library
+- feat(login-layout-validation): login layout validation done
+- feat(screen-size): Add support for different screen sizes
 
