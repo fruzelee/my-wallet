@@ -59,5 +59,10 @@ dependencies, using a singleton is more efficient.
 
 This commit adds a new dependency, logging-interceptor, to the build.gradle file. The
 logging-interceptor is a useful tool for logging network requests and responses, which will aid in
-debugging and monitoring network-related issues. 
+debugging and monitoring network-related issues.
 
+- feat: Add ApiClient services as companion object
+
+This commit adds ApiClient services as a companion object. By defining the ApiClient services as a
+companion object, developers can easily access and use the services without the need to create a new
+instance of the ApiClient class. This change will make the code more efficient and easier to read.
