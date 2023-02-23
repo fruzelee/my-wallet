@@ -66,3 +66,11 @@ debugging and monitoring network-related issues.
 This commit adds ApiClient services as a companion object. By defining the ApiClient services as a
 companion object, developers can easily access and use the services without the need to create a new
 instance of the ApiClient class. This change will make the code more efficient and easier to read.
+
+- feat: Add WalletService class to fetch login response
+
+This commit adds a new WalletService class that is responsible for fetching the login response. The
+WalletService class is a useful tool for managing the login process and handling any errors that may
+occur during the process. This change will make the code more modular and easier to maintain.
+Developers can now use the WalletService class to handle login-related functionality without the
+need to modify existing code.
