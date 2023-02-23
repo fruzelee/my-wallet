@@ -9,5 +9,12 @@
     <string name="send_fund">Send Fund</string>
     <string name="scan">Scan</string>
     <string name="close">close</string>
+    <string name="btn_txt_add_fund">Add fund</string>
+    <string name="btn_max">Max</string>
+    <string name="tv_usdc">USDC</string>
+    <string name="tv_balance_usdc">Balance USDC</string>
+    <string name="error_txt_insufficient_balance">Insufficient balance</string>
+    <string name="hint_txt_amount">$0</string>
+    <string name="tv_txt_recipient">Recipient</string>
 
 </resources>

@@ -10,8 +10,8 @@
     <color name="red">#d32f2f</color>
     <color name="grey">#a9a9a9</color>
     <color name="transparent">#00000000</color>
-    <color name="background_color">#FFFFFFFF</color>
-    <color name="hint_color">#75808A</color>
+    <color name="color_background">#FFFFFFFF</color>
+    <color name="color_hint">#75808A</color>
     <color name="color_disabled">#DBB6FF</color>
     <color name="color_inactive_bar">#C8CCD2</color>
     <color name="color_enabled">#6E50FF</color>
@@ -21,4 +21,12 @@
     <color name="pinFieldLibraryAccent">#000000</color>
     <color name="inactivePinFieldColor">#C8CCD2</color>
     <color name="pinFieldLibraryTransparent">#00000000</color>
+
+    <color name="dark_gray">#75808A</color>
+    <color name="orange">#FFA450</color>
+    <color name="golden">#FCF4FA</color>
+    <color name="gray">#575B62</color>
+    <color name="button_active">#6E50FF</color>
+    <color name="color_text_grey">#75808A</color>
+    <color name="color_text_6E50FF">#6E50FF</color>
 </resources>

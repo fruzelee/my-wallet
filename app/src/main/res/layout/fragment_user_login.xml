@@ -16,7 +16,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <TextView
-            android:id="@+id/tvLabelToolbar"
+            android:id="@+id/tv_title_toolbar"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:fontFamily="@font/circular_std_bold"
@@ -64,7 +64,7 @@
         app:boxStrokeWidth="0dp"
         app:boxStrokeWidthFocused="0dp"
         app:hintTextAppearance="@style/hintStyleBox"
-        app:hintTextColor="@color/hint_color"
+        app:hintTextColor="@color/color_hint"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/layoutParentToolbar"
         app:prefixText="@string/prefix">
@@ -118,14 +118,14 @@
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/btnContinue"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_40sdp"
+        android:layout_height="@dimen/_56sdp"
         android:layout_marginBottom="@dimen/_80sdp"
         android:alpha="1"
         android:background="@drawable/bg_btn"
         android:text="@string/tv_continue"
         android:textAllCaps="false"
         android:textColor="@color/white"
-        android:textSize="@dimen/_15ssp"
+        android:textSize="@dimen/_18ssp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

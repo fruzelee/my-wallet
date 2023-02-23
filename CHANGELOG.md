@@ -26,4 +26,5 @@ All notable changes to this project will be documented in this file.
 - feat(screen-size): add support for different screen sizes to ensure compatibility across various
   devices.
 - feat(send-fund): add SendFundFragment
+- feat(send-fund): update UI for better user experience
 
