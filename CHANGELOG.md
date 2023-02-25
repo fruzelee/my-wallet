@@ -143,4 +143,10 @@ versions of the dependencies, the application benefits from new features and imp
 fixes, and enhanced security. This chore ensures that the application is up-to-date with the latest
 industry standards and best practices.
 
+- refactor: lift return statement out of 'try' block
+
+This commit refactors the code by lifting the return statement out of the 'try' block. By doing so,
+the return statement is executed regardless of whether an exception is thrown or not. This
+enhancement improves the readability and maintainability of the code by separating the error
+handling logic from the main flow of the function.
 

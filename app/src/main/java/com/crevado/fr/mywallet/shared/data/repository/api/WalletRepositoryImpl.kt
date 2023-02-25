@@ -12,15 +12,15 @@ class WalletRepositoryImpl @Inject constructor(
 ) : WalletRepository {
 
     override suspend fun getLoginResponse(name: String, pin: String): UserInfoModel {
-        try {
-            return api.getLoginResponse(
+        return try {
+            api.getLoginResponse(
                 loginRequest = LoginRequestModel(
                     user = name,
                     pin = pin
                 )
             ).toUserInfo()
         } catch (e: Exception) {
-            return UserInfoModel(errorMessage = "Something wrong happened")
+            UserInfoModel(errorMessage = "Something wrong happened")
         }
     }
 }
