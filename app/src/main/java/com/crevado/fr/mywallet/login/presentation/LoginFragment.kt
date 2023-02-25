@@ -8,6 +8,7 @@ import android.text.TextWatcher
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
@@ -59,14 +60,22 @@ class LoginFragment : Fragment(), TextWatcher, View.OnClickListener {
         binding.apply {
             btnContinue.setOnClickListener(this@LoginFragment)
             etUserName.addTextChangedListener(this@LoginFragment)
+
             // pin view listener
             val listener = object : PinField.OnTextCompleteListener {
                 override fun onTextComplete(enteredText: String): Boolean {
-                    //Toast.makeText(this@LoginFragment,enteredText, Toast.LENGTH_SHORT).show()
+                    //Toast.makeText(requireContext(), enteredText, Toast.LENGTH_SHORT).show()
                     userPin = enteredText
-                    activity?.hideKeyboard()
-                    isBtnContinueEnable(isEnable = true)
-                    return true
+
+                    return if (userPin.length < 4) {
+                        isBtnContinueEnable(isEnable = false)
+                        false
+                    } else {
+                        activity?.hideKeyboard()
+                        isBtnContinueEnable(isEnable = true)
+                        true
+                    }
+
                 }
             }
             pinView.onTextCompleteListener = listener
@@ -80,7 +89,9 @@ class LoginFragment : Fragment(), TextWatcher, View.OnClickListener {
                     activity?.hideKeyboard()
                     val userName = binding.etUserName.text?.trim().toString().lowercase()
                     if (isUserNameValid(userName)) {
-                        viewModel.login(userName, userPin)
+                        if (isPinValid(userPin)) {
+                            viewModel.login(userName, userPin)
+                        }
                     }
                 }
             }
@@ -216,5 +227,16 @@ class LoginFragment : Fragment(), TextWatcher, View.OnClickListener {
 
         binding.layoutParentUserName.error = null
         return true
+    }
+
+    private fun isPinValid(userPin: String): Boolean {
+        return if (userPin.length < 4) {
+            isBtnContinueEnable(isEnable = false)
+            false
+        } else {
+            activity?.hideKeyboard()
+            isBtnContinueEnable(isEnable = true)
+            true
+        }
     }
 }

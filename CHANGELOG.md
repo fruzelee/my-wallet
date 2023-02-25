@@ -117,5 +117,11 @@ balance. If the inputted amount is equal to the user balance, the Max Button UI 
 indicate that the maximum amount has been selected. This enhancement improves the user experience by
 providing a clear visual indication of the selected amount.
 
+- feat: implement pin validation for login
+
+This commit adds a new feature to the login process - pin validation. When a user logs in, they are
+prompted to enter their pin, and the system validates it to ensure it matches the one associated
+with their account. This feature enhances security by adding an extra layer of authentication to the
+login process.
 
 
