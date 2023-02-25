@@ -139,14 +139,16 @@ class SendFundFragment : Fragment(), TextWatcher, View.OnClickListener {
 
         if (amount.toDouble() == userBalance.toDouble()) {
             updateMaxButton(true)
-        } else{
+        } else {
             updateMaxButton(false)
         }
 
         if (amount.toDouble() > userBalance.toDouble()) {
             isShowAddFund(true)
+            isBtnContinueEnable(isEnable = false)
         } else {
             isShowAddFund(false)
+            isBtnContinueEnable(isEnable = true)
         }
 
     }
@@ -155,13 +157,24 @@ class SendFundFragment : Fragment(), TextWatcher, View.OnClickListener {
         binding.tvUserBalance.text = getString(R.string.tv_balance).plus(" ")
             .plus(userCurrency.plus(" ").plus(amount))
     }
+
     private fun updateMaxButton(isMax: Boolean) {
-        if (isMax){
+        if (isMax) {
             binding.btnMax.setBackgroundResource(R.drawable.bg_btn_add_fund_max)
             binding.btnMax.setTextColor(Color.WHITE)
-        } else{
+        } else {
             binding.btnMax.setBackgroundResource(R.drawable.bg_btn_add_fund)
             binding.btnMax.setTextColor(Color.BLACK)
+        }
+    }
+
+    private fun isBtnContinueEnable(isEnable: Boolean) {
+        if (isEnable) {
+            binding.btnContinue.isEnabled = true
+            binding.btnContinue.alpha = 1f
+        } else {
+            binding.btnContinue.isEnabled = false
+            binding.btnContinue.alpha = 0.5f
         }
     }
 }

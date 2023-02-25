@@ -157,3 +157,12 @@ switch between light and dark themes based on their preference. This enhancement
 experience by providing users with the option to choose a theme that best suits their needs. The
 implementation of this feature may involve modifications to the UI, such as changing the color
 palette and adjusting the contrast of the elements to ensure readability.
+
+- feat: implement dynamic update of continue button on Send Fund feature
+
+This commit adds a new feature to the Send Fund functionality that dynamically updates the state of
+the Continue button based on the user's inputted amount. If the user enters an amount that exceeds
+their wallet balance, the Continue button is disabled, and an error message stating "Insufficient
+balance" is displayed. Additionally, an Add Fund button appears to allow the user to add funds to
+their wallet. This enhancement improves the user experience by providing real-time feedback and
+guidance to the user during the transaction process.
