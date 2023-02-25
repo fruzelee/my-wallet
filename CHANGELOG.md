@@ -136,4 +136,11 @@ This commit refactors the code by removing an unused namespace declaration from 
 This enhancement improves code readability and organization by removing unnecessary code that does
 not affect the functionality of the application.
 
+- chore: update dependency libraries in build.gradle
+
+This commit updates the dependency libraries in the build.gradle file. By upgrading to the latest
+versions of the dependencies, the application benefits from new features and improvements, bug
+fixes, and enhanced security. This chore ensures that the application is up-to-date with the latest
+industry standards and best practices.
+
 
