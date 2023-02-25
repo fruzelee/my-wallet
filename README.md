@@ -1,7 +1,39 @@
 <h1 align="center">Hi 👋, Welcome to My Wallet</h1>
-<h3 align="center">A two page application with UX and use case accuracy.</h3>
+<h3 align="center">A simple wallet application for the Android platform.</h3>
+
+# Wallet App
+This is an Android application developed using Kotlin, Android SDK, Retrofit 2.x.x, Hilt DI, and
+MVVM architecture. The app consists of two fragments - page1 and page2 - implemented using the
+Android Navigation component. The app also features a username filter logic to ensure that users
+input their username correctly, as well as balance input validation to avoid insufficient balance
+errors.
+
+# Features
+The following features were implemented in the Send Fund App:
+
+# Page1: Login
+- Username filter logic: The app allows users to input their username using only letters (a-z),
+numbers (0-9), full stop (.), and underscore (_). The username must be between 3 to 32 characters
+long, and the user cannot input successive underscores or full stops. The app also converts any
+uppercase letters to lowercase letters.
+- PIN input field: After the user inputs their username, the PIN input field is automatically enabled
+after waiting for 2 seconds from the user's last character input.
+- Continue button: The continue button is enabled only after the user inputs a valid username.
+
+# Page2: Send Fund
+- Call "login" API: After a successful response from the login API, the app takes the user to page2.
+- WalletAddress in Recipient card: The app sets the user's username (WalletAddress) on the recipient
+card.
+- Max button: The app allows the user to click on the max button to set the balance amount.
+- Balance USDC: The app shows the user's balance in USDC after deducting the input value. The input
+value must be within the use case accuracy.
+- Insufficient balance: If the user inputs an amount greater than their balance, the app shows an "
+Insufficient balance" message.
+- Add fund button: If the user inputs an amount greater than their balance, the app shows an "Add
+fund" button. However, this button doesn't have any action at this phase.
 
 # Technology Stack
+
 - Language: Kotlin
 - SDK: Android SDK
 - Navigation Graph: Yes
@@ -20,3 +52,8 @@ Retrofit 2.x.x is used for network operations, providing a robust and reliable w
 with remote servers. Hilt is utilized for dependency injection, allowing for easier management and
 organization of app components. Finally, the MVVM architecture pattern is utilized to maintain a
 clean and modular architecture for the app.
+
+# Conclusion
+The Send Fund App is a fully functional Android application that implements the features required in
+the PRD document. The app is implemented using Kotlin and adheres to the MVVM architecture, making
+it easy to maintain and expand.
