@@ -130,4 +130,10 @@ This commit refactors the code by optimizing imports. Unused imports are removed
 ones are sorted alphabetically to improve code readability and organization. This enhancement does
 not affect the functionality of the code but improves its maintainability.
 
+- refactor: remove unused namespace declaration from theme.xml
+
+This commit refactors the code by removing an unused namespace declaration from the theme.xml file.
+This enhancement improves code readability and organization by removing unnecessary code that does
+not affect the functionality of the application.
+
 
