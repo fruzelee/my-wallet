@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".AppApplication"
         android:allowBackup="true"
@@ -13,7 +15,7 @@
         android:theme="@style/Theme.MyWallet"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".shared.presentation.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
