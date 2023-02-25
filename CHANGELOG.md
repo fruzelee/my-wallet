@@ -89,3 +89,4 @@ improve the functionality and reliability of the user login feature.
 - feat: add login functionality
 - feat: add send fund functionality
 - feat: Add internet permission to manifest
+- feat: Enable data binding in Gradle
