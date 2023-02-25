@@ -1,5 +1,6 @@
 package com.crevado.fr.mywallet.send_fund.presentation
 
+import android.graphics.Color
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -133,16 +134,34 @@ class SendFundFragment : Fragment(), TextWatcher, View.OnClickListener {
     }
 
     private fun processAmountInput(amount: String) {
+
+        updateUserBalance((userBalance.toDouble() - amount.toDouble()).toString())
+
+        if (amount.toDouble() == userBalance.toDouble()) {
+            updateMaxButton(true)
+        } else{
+            updateMaxButton(false)
+        }
+
         if (amount.toDouble() > userBalance.toDouble()) {
             isShowAddFund(true)
         } else {
             isShowAddFund(false)
         }
-        updateUserBalance((userBalance.toDouble() - amount.toDouble()).toString())
+
     }
 
     private fun updateUserBalance(amount: String) {
         binding.tvUserBalance.text = getString(R.string.tv_balance).plus(" ")
             .plus(userCurrency.plus(" ").plus(amount))
+    }
+    private fun updateMaxButton(isMax: Boolean) {
+        if (isMax){
+            binding.btnMax.setBackgroundResource(R.drawable.bg_btn_add_fund_max)
+            binding.btnMax.setTextColor(Color.WHITE)
+        } else{
+            binding.btnMax.setBackgroundResource(R.drawable.bg_btn_add_fund)
+            binding.btnMax.setTextColor(Color.BLACK)
+        }
     }
 }

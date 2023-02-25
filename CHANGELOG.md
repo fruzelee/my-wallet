@@ -110,6 +110,12 @@ This commit adds new logic to update the user balance by deducting the input amo
 achieved by subtracting the input amount from the current user balance. This feature enables the
 user to send fund from their account and reflects the updated balance in real-time.
 
+- style: update Max Button UI based on inputted and user balance
+
+This commit updates the UI of the Max Button to reflect changes in the inputted amount and user
+balance. If the inputted amount is equal to the user balance, the Max Button UI is modified to
+indicate that the maximum amount has been selected. This enhancement improves the user experience by
+providing a clear visual indication of the selected amount.
 
 
 
