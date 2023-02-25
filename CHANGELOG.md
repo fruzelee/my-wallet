@@ -166,3 +166,7 @@ their wallet balance, the Continue button is disabled, and an error message stat
 balance" is displayed. Additionally, an Add Fund button appears to allow the user to add funds to
 their wallet. This enhancement improves the user experience by providing real-time feedback and
 guidance to the user during the transaction process.
+
+- docs: Update README.md
+
+Update README.md, which provides a clear and concise summary of the changes made in the commit.
