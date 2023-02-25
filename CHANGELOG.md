@@ -104,6 +104,12 @@ This commit updates the username filter logic to ensure that any uppercase lette
 user are automatically converted to lowercase. This ensures consistency in the formatting of
 usernames and improves the user experience.
 
+- feat: implement deduction of input amount from user balance
+
+This commit adds new logic to update the user balance by deducting the input amount. This is
+achieved by subtracting the input amount from the current user balance. This feature enables the
+user to send fund from their account and reflects the updated balance in real-time.
+
 
 
 

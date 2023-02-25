@@ -138,5 +138,11 @@ class SendFundFragment : Fragment(), TextWatcher, View.OnClickListener {
         } else {
             isShowAddFund(false)
         }
+        updateUserBalance((userBalance.toDouble() - amount.toDouble()).toString())
+    }
+
+    private fun updateUserBalance(amount: String) {
+        binding.tvUserBalance.text = getString(R.string.tv_balance).plus(" ")
+            .plus(userCurrency.plus(" ").plus(amount))
     }
 }
