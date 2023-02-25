@@ -92,3 +92,4 @@ improve the functionality and reliability of the user login feature.
 - feat: Enable data binding in Gradle
 - feat: Update login UI
 - feat: Update send fund UI
+- chore: Remove unused resources from codebase
