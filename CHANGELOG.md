@@ -195,3 +195,8 @@ project.
 
 This commit reorganizes the color XML file by removing duplicate color codes. This improves the
 efficiency of the file and makes it easier to maintain.
+
+- refactor: remove duplicate files for pin view lib
+
+This commit removes duplicate files for the pin view library, improving the organization and
+reducing redundancy.
