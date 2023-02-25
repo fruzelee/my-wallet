@@ -78,7 +78,7 @@ class LoginFragment : Fragment(), TextWatcher, View.OnClickListener {
             when (it.id) {
                 R.id.btnContinue -> {
                     activity?.hideKeyboard()
-                    val userName = binding.etUserName.text?.trim().toString()
+                    val userName = binding.etUserName.text?.trim().toString().lowercase()
                     if (isUserNameValid(userName)) {
                         viewModel.login(userName, userPin)
                     }
@@ -144,7 +144,7 @@ class LoginFragment : Fragment(), TextWatcher, View.OnClickListener {
 
                 val handler = Handler(Looper.getMainLooper())
                 handler.post {
-                    isPinEnable(isUserNameValid(editable.toString()))
+                    isPinEnable(isUserNameValid(editable.toString().lowercase()))
                 }
 
             }
@@ -171,11 +171,11 @@ class LoginFragment : Fragment(), TextWatcher, View.OnClickListener {
         }
     }
 
-    private fun isUserNameValid(name: String): Boolean {
+    private fun isUserNameValid(userName: String): Boolean {
         var charCount = 0
         var previousSpecialChar: Char = Char.MIN_VALUE
         var isSuccessiveSpecialChar = false
-        name.forEach {
+        userName.forEach {
             if (it == '.' || it == '_') {
                 if (it == previousSpecialChar) {
                     isSuccessiveSpecialChar = true
@@ -188,20 +188,20 @@ class LoginFragment : Fragment(), TextWatcher, View.OnClickListener {
             }
         }
 
-        if (name.contains(" ")) {
+        if (userName.contains(" ")) {
             //activity?.showErrorToast("No Spaces allowed.")
             binding.layoutParentUserName.error = "No Spaces allowed."
             return false
         }
 
-        if (name.length > 33 || charCount < 3 || isSuccessiveSpecialChar) {
+        if (userName.length > 33 || charCount < 3 || isSuccessiveSpecialChar) {
 
             if (charCount < 3) {
                 //activity?.showErrorToast("Usernames must have at least 3 characters.")
                 binding.layoutParentUserName.error = "Usernames must have at least 3 characters."
             }
 
-            if (name.length > 33) {
+            if (userName.length > 33) {
                 //activity?.showErrorToast("Username can't exceed 32 characters.")
                 binding.layoutParentUserName.error = "Username can't exceed 32 characters."
             }

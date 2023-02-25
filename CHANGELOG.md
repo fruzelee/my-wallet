@@ -98,4 +98,12 @@ improve the functionality and reliability of the user login feature.
 - feat: Add username validation with error toast
 - feat: Replace error toast message with TextInputLayout error message for better user experience
 - feat: Remove error message for valid username
+- fix: convert username uppercase letters to lowercase
+
+This commit updates the username filter logic to ensure that any uppercase letters entered by the
+user are automatically converted to lowercase. This ensures consistency in the formatting of
+usernames and improves the user experience.
+
+
+
 
