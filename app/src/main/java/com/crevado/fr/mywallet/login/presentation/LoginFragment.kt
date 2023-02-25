@@ -3,7 +3,6 @@ package com.crevado.fr.mywallet.login.presentation
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -16,10 +15,10 @@ import androidx.navigation.fragment.findNavController
 import com.crevado.fr.mywallet.R
 import com.crevado.fr.mywallet.databinding.FragmentUserLoginBinding
 import com.crevado.fr.mywallet.login.business.UserInfoModel
-import com.crevado.fr.mywallet.utils.BundleKey
 import com.crevado.fr.mywallet.shared.extensions.hideKeyboard
-import com.crevado.fr.mywallet.utils.pinedittextfield.PinField
 import com.crevado.fr.mywallet.shared.extensions.showErrorToast
+import com.crevado.fr.mywallet.utils.BundleKey
+import com.crevado.fr.mywallet.utils.pinedittextfield.PinField
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 
@@ -40,21 +39,22 @@ class LoginFragment : Fragment(), TextWatcher, View.OnClickListener {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        setUpViews()
-    }
-
-    private fun setUpViews() {
         initViews()
+        setupListeners()
         startObserver()
     }
 
     private fun initViews() {
         binding.apply {
             isBtnContinueEnable(isEnable = false)
-            btnContinue.setOnClickListener(this@LoginFragment)
             isOtpEnable(false)
-            etUserName.addTextChangedListener(this@LoginFragment)
+        }
+    }
 
+    private fun setupListeners() {
+        binding.apply {
+            btnContinue.setOnClickListener(this@LoginFragment)
+            etUserName.addTextChangedListener(this@LoginFragment)
             val listener = object : PinField.OnTextCompleteListener {
                 override fun onTextComplete(enteredText: String): Boolean {
                     //Toast.makeText(this@LoginFragment,enteredText, Toast.LENGTH_SHORT).show()
@@ -63,7 +63,6 @@ class LoginFragment : Fragment(), TextWatcher, View.OnClickListener {
                     isBtnContinueEnable(isEnable = true)
                     return true
                 }
-
             }
             pinView.onTextCompleteListener = listener
         }
@@ -103,7 +102,6 @@ class LoginFragment : Fragment(), TextWatcher, View.OnClickListener {
                             bundle.putString(BundleKey.KEY_USER_IMAGE_URL, userData.profileImageUrl)
                             bundle.putString(BundleKey.KEY_BALANCE, userData.balance.toString())
                             bundle.putString(BundleKey.KEY_CURRENCY, userData.currency)
-                            Log.d("TAG", "startObserver: LoginFragment")
                             findNavController().navigate(
                                 R.id.action_login_fragment_to_send_fund_fragment, bundle
                             )
@@ -117,7 +115,7 @@ class LoginFragment : Fragment(), TextWatcher, View.OnClickListener {
     }
 
     private fun isShowProgressBar(isShow: Boolean) {
-        binding.progressBar.visibility = if (isShow) View.VISIBLE else View.GONE
+        binding.loadingView.visibility = if (isShow) View.VISIBLE else View.GONE
     }
 
     override fun beforeTextChanged(

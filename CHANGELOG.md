@@ -87,3 +87,4 @@ this entity is to handle user login-related data and operations. This feature en
 improve the functionality and reliability of the user login feature.
 
 - feat: add login functionality
+- feat: add send fund functionality

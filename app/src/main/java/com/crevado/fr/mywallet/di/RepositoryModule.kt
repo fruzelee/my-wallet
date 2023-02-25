@@ -48,7 +48,7 @@ object RepositoryModule {
 
     @Provides
     @Singleton
-    fun provideCoinRepository(api: WalletService): WalletRepository {
+    fun provideWalletRepository(api: WalletService): WalletRepository {
         return WalletRepositoryImpl(api)
     }
 }
