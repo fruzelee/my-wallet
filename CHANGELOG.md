@@ -95,3 +95,5 @@ improve the functionality and reliability of the user login feature.
 - chore: Remove unused resources from codebase
 - feat: Update PinView library
 - feat: Update launcher icon
+- feat: Add username validation with error toast
+

@@ -1,6 +1,8 @@
 package com.crevado.fr.mywallet.login.presentation
 
 import android.os.Bundle
+import android.os.Handler
+import android.os.Looper
 import android.text.Editable
 import android.text.TextWatcher
 import android.view.LayoutInflater
@@ -21,12 +23,14 @@ import com.crevado.fr.mywallet.utils.BundleKey
 import com.crevado.fr.pinviewlibrary.PinField
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
+import java.util.*
 
 @AndroidEntryPoint
 class LoginFragment : Fragment(), TextWatcher, View.OnClickListener {
     private lateinit var binding: FragmentUserLoginBinding
     private val viewModel: LoginViewModel by viewModels()
     private var userPin = ""
+    private var timer = Timer()
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -47,7 +51,7 @@ class LoginFragment : Fragment(), TextWatcher, View.OnClickListener {
     private fun initViews() {
         binding.apply {
             isBtnContinueEnable(isEnable = false)
-            isOtpEnable(false)
+            isPinEnable(false)
         }
     }
 
@@ -55,6 +59,7 @@ class LoginFragment : Fragment(), TextWatcher, View.OnClickListener {
         binding.apply {
             btnContinue.setOnClickListener(this@LoginFragment)
             etUserName.addTextChangedListener(this@LoginFragment)
+            // pin view listener
             val listener = object : PinField.OnTextCompleteListener {
                 override fun onTextComplete(enteredText: String): Boolean {
                     //Toast.makeText(this@LoginFragment,enteredText, Toast.LENGTH_SHORT).show()
@@ -127,13 +132,26 @@ class LoginFragment : Fragment(), TextWatcher, View.OnClickListener {
     }
 
     override fun onTextChanged(charSequence: CharSequence?, start: Int, before: Int, count: Int) {
+        // The user is typing: reset already started timer (if existing)
+        timer.cancel()
     }
 
     override fun afterTextChanged(editable: Editable?) {
-        isOtpEnable(isUserNameValid(editable.toString()))
+        // The user typed: start the timer
+        timer = Timer()
+        timer.schedule(object : TimerTask() {
+            override fun run() {
+
+                val handler = Handler(Looper.getMainLooper())
+                handler.post {
+                    isPinEnable(isUserNameValid(editable.toString()))
+                }
+
+            }
+        }, 2000) // 2000 ms delay before the timer executes the „run“ method from TimerTask
     }
 
-    private fun isOtpEnable(isEnable: Boolean) {
+    private fun isPinEnable(isEnable: Boolean) {
         if (isEnable) {
             binding.pinView.isEnabled = true
             binding.pinView.alpha = 1f
@@ -156,11 +174,11 @@ class LoginFragment : Fragment(), TextWatcher, View.OnClickListener {
     private fun isUserNameValid(name: String): Boolean {
         var charCount = 0
         var previousSpecialChar: Char = Char.MIN_VALUE
-        var isConsecutiveSpecialChar = false
+        var isSuccessiveSpecialChar = false
         name.forEach {
             if (it == '.' || it == '_') {
                 if (it == previousSpecialChar) {
-                    isConsecutiveSpecialChar = true
+                    isSuccessiveSpecialChar = true
                 } else {
                     previousSpecialChar = it
                 }
@@ -169,9 +187,29 @@ class LoginFragment : Fragment(), TextWatcher, View.OnClickListener {
                 previousSpecialChar = Char.MIN_VALUE
             }
         }
-        if (name.length > 33 || charCount < 3 || isConsecutiveSpecialChar) {
+
+        if (name.contains(" ")) {
+            activity?.showErrorToast("No Spaces allowed.")
             return false
         }
+
+        if (name.length > 33 || charCount < 3 || isSuccessiveSpecialChar) {
+
+            if (charCount < 3) {
+                activity?.showErrorToast("Usernames must have at least 3 characters.")
+            }
+
+            if (name.length > 33) {
+                activity?.showErrorToast("Username can't exceed 32 characters.")
+            }
+
+            if (isSuccessiveSpecialChar) {
+                activity?.showErrorToast("This username is invalid.")
+            }
+
+            return false
+        }
+
         return true
     }
 }
