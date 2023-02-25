@@ -214,6 +214,7 @@ class LoginFragment : Fragment(), TextWatcher, View.OnClickListener {
             return false
         }
 
+        binding.layoutParentUserName.error = null
         return true
     }
 }
