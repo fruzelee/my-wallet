@@ -189,22 +189,26 @@ class LoginFragment : Fragment(), TextWatcher, View.OnClickListener {
         }
 
         if (name.contains(" ")) {
-            activity?.showErrorToast("No Spaces allowed.")
+            //activity?.showErrorToast("No Spaces allowed.")
+            binding.layoutParentUserName.error = "No Spaces allowed."
             return false
         }
 
         if (name.length > 33 || charCount < 3 || isSuccessiveSpecialChar) {
 
             if (charCount < 3) {
-                activity?.showErrorToast("Usernames must have at least 3 characters.")
+                //activity?.showErrorToast("Usernames must have at least 3 characters.")
+                binding.layoutParentUserName.error = "Usernames must have at least 3 characters."
             }
 
             if (name.length > 33) {
-                activity?.showErrorToast("Username can't exceed 32 characters.")
+                //activity?.showErrorToast("Username can't exceed 32 characters.")
+                binding.layoutParentUserName.error = "Username can't exceed 32 characters."
             }
 
             if (isSuccessiveSpecialChar) {
-                activity?.showErrorToast("This username is invalid.")
+                //activity?.showErrorToast("This username is invalid.")
+                binding.layoutParentUserName.error = "This username is invalid."
             }
 
             return false

@@ -68,6 +68,7 @@
             android:hint="@string/hint_user_name"
             android:padding="0dp"
             app:boxStrokeWidth="0dp"
+            app:errorEnabled="true"
             app:boxStrokeWidthFocused="0dp"
             app:hintTextAppearance="@style/hintStyleBox"
             app:hintTextColor="@color/color_hint"

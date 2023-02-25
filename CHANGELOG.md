@@ -96,4 +96,5 @@ improve the functionality and reliability of the user login feature.
 - feat: Update PinView library
 - feat: Update launcher icon
 - feat: Add username validation with error toast
+- feat: Replace error toast message with TextInputLayout error message for better user experience
 
