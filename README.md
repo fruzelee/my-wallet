@@ -67,3 +67,15 @@ it easy to maintain and expand.
 # Demo App
 
 <a href="https://postimg.cc/Lqbx994k" target="_blank"><img src="https://i.postimg.cc/d1qp93zf/web-build-20230226-o3f4-cheetah-33-en-US-portrait-artifacts-1.png" alt="web-build-20230226-o3f4-cheetah-33-en-US-portrait-artifacts-1"/></a> <a href="https://postimg.cc/jwnZCpCp" target="_blank"><img src="https://i.postimg.cc/ydv5pBK8/web-build-20230226-o3f4-cheetah-33-en-US-portrait-artifacts-2.png" alt="web-build-20230226-o3f4-cheetah-33-en-US-portrait-artifacts-2"/></a> <a href="https://postimg.cc/m1xV9mHt" target="_blank"><img src="https://i.postimg.cc/7hhRpcPM/web-build-20230226-o3f4-cheetah-33-en-US-portrait-artifacts-3.png" alt="web-build-20230226-o3f4-cheetah-33-en-US-portrait-artifacts-3"/></a> <a href="https://postimg.cc/y3Fjy0mn" target="_blank"><img src="https://i.postimg.cc/qqFF0Lzf/web-build-20230226-o3f4-cheetah-33-en-US-portrait-artifacts-4.png" alt="web-build-20230226-o3f4-cheetah-33-en-US-portrait-artifacts-4"/></a> <a href="https://postimg.cc/vcs3HSyK" target="_blank"><img src="https://i.postimg.cc/4NKMPrSX/web-build-20230226-o3f4-cheetah-33-en-US-portrait-artifacts-5.png" alt="web-build-20230226-o3f4-cheetah-33-en-US-portrait-artifacts-5"/></a> <a href="https://postimg.cc/PNZSHngZ" target="_blank"><img src="https://i.postimg.cc/SQ13WyVZ/web-build-20230226-o3f4-cheetah-33-en-US-portrait-artifacts-6.png" alt="web-build-20230226-o3f4-cheetah-33-en-US-portrait-artifacts-6"/></a> 
+
+# MIT License
+
+```
+Copyright (c) Year Full name
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+```

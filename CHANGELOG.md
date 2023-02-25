@@ -180,3 +180,8 @@ of the readme.md file has been updated.
 
 This commit adds demo app screenshots to showcase the functionality of the application. The purpose
 of this change is to provide a clearer understanding of the app's features for users.
+
+- chore: add MIT License to documentation
+
+This commit adds the MIT License to the documentation. The purpose of this change is to ensure that
+the appropriate license information is provided for the project.
