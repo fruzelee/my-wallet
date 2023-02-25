@@ -185,3 +185,8 @@ of this change is to provide a clearer understanding of the app's features for u
 
 This commit adds the MIT License to the documentation. The purpose of this change is to ensure that
 the appropriate license information is provided for the project.
+
+- feat: add visitor counter to readme.md
+
+This commit adds a visitor counter to the readme.md file to track the number of visitors to the
+project.

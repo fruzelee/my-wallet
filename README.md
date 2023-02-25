@@ -1,3 +1,8 @@
+<p align="center">
+    Visitor count<br>
+    <img src="https://profile-counter.glitch.me/fruzelee/count.svg" />
+</p>
+
 <h1 align="center">Hi 👋, Welcome to My Wallet</h1>
 <h3 align="center">A simple wallet application for the Android platform.</h3>
 
