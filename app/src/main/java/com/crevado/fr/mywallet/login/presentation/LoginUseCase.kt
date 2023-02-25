@@ -14,8 +14,8 @@ class LoginUseCase @Inject constructor(
     operator fun invoke(userName: String, pin: String): Flow<Result<UserInfoModel>> = flow {
         try {
             emit(Result.Loading())
-            val coins = repository.getLoginResponse(name = userName, pin = pin)
-            emit(Result.Success(coins))
+            val data = repository.getLoginResponse(name = userName, pin = pin)
+            emit(Result.Success(data))
         } catch (e: IOException) {
             emit(Result.Error("Couldn't reach server. Check your internet connection!"))
         }
