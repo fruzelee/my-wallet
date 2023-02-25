@@ -150,3 +150,10 @@ the return statement is executed regardless of whether an exception is thrown or
 enhancement improves the readability and maintainability of the code by separating the error
 handling logic from the main flow of the function.
 
+- feat: implement dark theme support
+
+This commit adds a new feature to the application - dark theme support. Users can now choose to
+switch between light and dark themes based on their preference. This enhancement improves the user
+experience by providing users with the option to choose a theme that best suits their needs. The
+implementation of this feature may involve modifications to the UI, such as changing the color
+palette and adjusting the contrast of the elements to ensure readability.
