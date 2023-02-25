@@ -190,3 +190,8 @@ the appropriate license information is provided for the project.
 
 This commit adds a visitor counter to the readme.md file to track the number of visitors to the
 project.
+
+- refactor: reorganize color xml file and remove duplicates
+
+This commit reorganizes the color XML file by removing duplicate color codes. This improves the
+efficiency of the file and makes it easier to maintain.

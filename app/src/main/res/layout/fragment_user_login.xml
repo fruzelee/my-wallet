@@ -71,7 +71,7 @@
             app:errorEnabled="true"
             app:boxStrokeWidthFocused="0dp"
             app:hintTextAppearance="@style/hintStyleBox"
-            app:hintTextColor="@color/color_hint"
+            app:hintTextColor="@color/color_text_grey"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/layoutParentToolbar"
             app:prefixText="@string/prefix">

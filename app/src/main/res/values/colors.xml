@@ -8,20 +8,13 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
     <color name="red">#d32f2f</color>
+    <color name="orange">#FFA450</color>
+    <color name="grey">#575B62</color>
     <color name="transparent">#00000000</color>
     <color name="color_bg_white">#FFFFFFFF</color>
-    <color name="color_hint">#75808A</color>
     <color name="color_inactive_bar">#C8CCD2</color>
-    <color name="color_btn">#6E50FF</color>
-
-    <color name="pinFieldLibraryAccent">#000000</color>
-    <color name="inactivePinFieldColor">#C8CCD2</color>
-    <color name="pinFieldLibraryTransparent">#00000000</color>
-
-    <color name="orange">#FFA450</color>
-    <color name="golden">#FCF4FA</color>
-    <color name="gray">#575B62</color>
-    <color name="button_active">#6E50FF</color>
+    <color name="color_btn_magento">#6E50FF</color>
+    <color name="color_golden">#FCF4FA</color>
     <color name="color_text_grey">#75808A</color>
-    <color name="color_text_6E50FF">#6E50FF</color>
+    <color name="color_text_magento">#6E50FF</color>
 </resources>
