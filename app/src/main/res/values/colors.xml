@@ -9,7 +9,7 @@
     <color name="white">#FFFFFFFF</color>
     <color name="red">#d32f2f</color>
     <color name="transparent">#00000000</color>
-    <color name="color_background">#FFFFFFFF</color>
+    <color name="color_bg_white">#FFFFFFFF</color>
     <color name="color_hint">#75808A</color>
     <color name="color_inactive_bar">#C8CCD2</color>
     <color name="color_btn">#6E50FF</color>

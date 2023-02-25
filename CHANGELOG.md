@@ -85,3 +85,5 @@ UserLoginRequestModel is a data class that contains the necessary data to perfor
 This commit adds the UserLoginEntity to the data layer for the user_login feature. The purpose of
 this entity is to handle user login-related data and operations. This feature enhancement will
 improve the functionality and reliability of the user login feature.
+
+- feat: add login functionality

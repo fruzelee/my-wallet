@@ -1,146 +1,154 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_margin="@dimen/_20sdp"
-    tools:context=".user_login.presentation.UserLoginFragment">
+    android:background="@color/color_bg_white"
+    android:padding="@dimen/_20sdp"
+    tools:context=".login.presentation.LoginFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/layoutParentToolbar"
+        android:id="@+id/layout_parent"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_40sdp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/tv_title_toolbar"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:fontFamily="@font/circular_std_bold"
-            android:gravity="center_vertical"
-            android:text="@string/send_fund"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_18ssp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/ivScan"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_marginEnd="@dimen/_10sdp"
-            android:layout_toStartOf="@id/ivClose"
-            android:contentDescription="@string/scan"
-            android:padding="@dimen/_5sdp"
-            android:src="@drawable/ic_scan"
-            app:layout_constraintEnd_toStartOf="@id/ivClose"
-            app:layout_constraintTop_toTopOf="parent" />
-
-        <ImageView
-            android:id="@+id/ivClose"
-            android:layout_width="wrap_content"
-            android:layout_height="match_parent"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:contentDescription="@string/close"
-            android:padding="@dimen/_5sdp"
-            android:src="@drawable/ic_close"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutParentToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/tv_title_toolbar"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/circular_std_bold"
+                android:gravity="center_vertical"
+                android:text="@string/send_fund"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/layoutParentUserName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/transparent"
-        android:hint="@string/hint_user_name"
-        android:padding="0dp"
-        app:boxStrokeWidth="0dp"
-        app:boxStrokeWidthFocused="0dp"
-        app:hintTextAppearance="@style/hintStyleBox"
-        app:hintTextColor="@color/color_hint"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/layoutParentToolbar"
-        app:prefixText="@string/prefix">
+            <ImageView
+                android:id="@+id/ivScan"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_toStartOf="@id/ivClose"
+                android:contentDescription="@string/scan"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_scan"
+                app:layout_constraintEnd_toStartOf="@id/ivClose"
+                app:layout_constraintTop_toTopOf="parent" />
 
-        <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/etUserName"
+            <ImageView
+                android:id="@+id/ivClose"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/close"
+                android:padding="@dimen/_5sdp"
+                android:src="@drawable/ic_close"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/layoutParentUserName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/transparent"
-            android:fontFamily="@font/circular_std_medium"
-            android:inputType="text"
+            android:hint="@string/hint_user_name"
+            android:padding="0dp"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:hintTextAppearance="@style/hintStyleBox"
+            app:hintTextColor="@color/color_hint"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutParentToolbar"
+            app:prefixText="@string/prefix">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/transparent"
+                android:fontFamily="@font/circular_std_medium"
+                android:inputType="text"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="normal">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/tvLabelPin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_your_pin"
             android:textSize="@dimen/_14ssp"
-            android:textStyle="normal">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/layoutParentUserName" />
 
-        </com.google.android.material.textfield.TextInputEditText>
+        <com.crevado.fr.mywallet.utils.pinedittextfield.LinePinField
+            android:id="@+id/pinView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_5sdp"
 
-    </com.google.android.material.textfield.TextInputLayout>
+            android:hint=""
+            android:inputType="textPassword"
+            android:textSelectHandle="@drawable/text_handle"
+            android:textSize="@dimen/_16ssp"
+            app:bottomTextPaddingDp="@dimen/_10sdp"
+            app:distanceInBetween="@dimen/_5sdp"
+            app:fieldColor="@color/color_inactive_bar"
+            app:highlightEnabled="false"
+            app:highlightSingleFieldMode="true"
+            app:highlightType="completedFields"
+            app:isCursorEnabled="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLabelPin"
+            app:lineThickness="@dimen/_2sdp"
+            app:noOfFields="4" />
 
-    <TextView
-        android:id="@+id/tvLabelPin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/enter_your_pin"
-        android:textSize="@dimen/_14ssp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/layoutParentUserName" />
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginBottom="@dimen/_80sdp"
+            android:alpha="1"
+            android:background="@drawable/bg_btn"
+            android:text="@string/tv_continue"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_18ssp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/pinView" />
 
-    <com.crevado.fr.mywallet.utils.pinedittextfield.LinePinField
-        android:id="@+id/pinView"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_50sdp"
-        android:layout_marginTop="@dimen/_5sdp"
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@id/btnContinue"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/pinView"
+            app:showAnimationBehavior="outward" />
 
-        android:hint=""
-        android:inputType="textPassword"
-        android:textSelectHandle="@drawable/text_handle"
-        android:textSize="@dimen/_16ssp"
-        app:bottomTextPaddingDp="@dimen/_10sdp"
-        app:distanceInBetween="@dimen/_5sdp"
-        app:fieldColor="@color/color_inactive_bar"
-        app:highlightEnabled="false"
-        app:highlightSingleFieldMode="true"
-        app:highlightType="completedFields"
-        app:isCursorEnabled="true"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tvLabelPin"
-        app:lineThickness="@dimen/_2sdp"
-        app:noOfFields="4" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <androidx.appcompat.widget.AppCompatButton
-        android:id="@+id/btnContinue"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_56sdp"
-        android:layout_marginBottom="@dimen/_80sdp"
-        android:alpha="1"
-        android:background="@drawable/bg_btn"
-        android:text="@string/tv_continue"
-        android:textAllCaps="false"
-        android:textColor="@color/white"
-        android:textSize="@dimen/_18ssp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/pinView" />
-
-    <ProgressBar
-        android:id="@+id/progressBar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:visibility="gone"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:showAnimationBehavior="outward" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

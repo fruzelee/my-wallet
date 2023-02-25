@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
-    app:startDestination="@id/userLoginFragment">
+    app:startDestination="@id/login_fragment">
 
     <fragment
-        android:id="@+id/userLoginFragment"
-        android:name="com.crevado.fr.mywallet.user_login.presentation.UserLoginFragment"
-        android:label="UserLoginFragment" />
+        android:id="@+id/login_fragment"
+        android:name="com.crevado.fr.mywallet.login.presentation.LoginFragment"
+        tools:layout="@layout/fragment_user_login">
+        <action
+            android:id="@+id/action_login_fragment_to_send_fund_fragment"
+            app:destination="@id/send_fund_fragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/send_fund_fragment"
+        android:name="com.crevado.fr.mywallet.send_fund.presentation.SendFundFragment"
+        tools:layout="@layout/fragment_send_fund">
+        <action
+            android:id="@+id/action_send_fund_fragment_to_login_fragment"
+            app:destination="@id/login_fragment" />
+    </fragment>
 
 </navigation>
