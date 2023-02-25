@@ -170,3 +170,8 @@ guidance to the user during the transaction process.
 - docs: Update README.md
 
 Update README.md, which provides a clear and concise summary of the changes made in the commit.
+
+- chore(docs): update technology stack on readme.md
+
+The update is related to the project's documentation and specifically, the technology stack section
+of the readme.md file has been updated.
