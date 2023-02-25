@@ -94,3 +94,4 @@ improve the functionality and reliability of the user login feature.
 - feat: Update send fund UI
 - chore: Remove unused resources from codebase
 - feat: Update PinView library
+- feat: Update launcher icon

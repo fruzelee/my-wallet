@@ -26,13 +26,9 @@ object RepositoryModule {
     fun provideOkHttpClient() = if (BuildConfig.DEBUG) {
         val loggingInterceptor = HttpLoggingInterceptor()
         loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.BODY)
-        OkHttpClient.Builder()
-            .addInterceptor(loggingInterceptor)
-            .build()
+        OkHttpClient.Builder().addInterceptor(loggingInterceptor).build()
     } else {
-        OkHttpClient
-            .Builder()
-            .build()
+        OkHttpClient.Builder().build()
     }
 
     @Provides
