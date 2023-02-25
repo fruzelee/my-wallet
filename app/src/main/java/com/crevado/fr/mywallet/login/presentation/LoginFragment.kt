@@ -18,7 +18,7 @@ import com.crevado.fr.mywallet.login.business.UserInfoModel
 import com.crevado.fr.mywallet.shared.extensions.hideKeyboard
 import com.crevado.fr.mywallet.shared.extensions.showErrorToast
 import com.crevado.fr.mywallet.utils.BundleKey
-import com.crevado.fr.mywallet.utils.pinedittextfield.PinField
+import com.crevado.fr.pinviewlibrary.PinField
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 

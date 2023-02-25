@@ -100,7 +100,7 @@
             app:layout_constraintTop_toBottomOf="@id/layoutParentUserName"
             tools:targetApi="p" />
 
-        <com.crevado.fr.mywallet.utils.pinedittextfield.LinePinField
+        <com.crevado.fr.pinviewlibrary.LinePinField
             android:id="@+id/pinView"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_50sdp"
