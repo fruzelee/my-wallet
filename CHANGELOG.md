@@ -175,3 +175,8 @@ Update README.md, which provides a clear and concise summary of the changes made
 
 The update is related to the project's documentation and specifically, the technology stack section
 of the readme.md file has been updated.
+
+- chore(docs): add demo app screenshots for functionality emphasis
+
+This commit adds demo app screenshots to showcase the functionality of the application. The purpose
+of this change is to provide a clearer understanding of the app's features for users.

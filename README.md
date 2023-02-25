@@ -57,3 +57,8 @@ clean and modular architecture for the app.
 The Send Fund App is a fully functional Android application that implements the features required in
 the PRD document. The app is implemented using Kotlin and adheres to the MVVM architecture, making
 it easy to maintain and expand.
+
+# Demo App
+
+https://i.postimg.cc/d1qp93zf/web-build-20230226-o3f4-cheetah-33-en-US-portrait-artifacts-1.png https://i.postimg.cc/ydv5pBK8/web-build-20230226-o3f4-cheetah-33-en-US-portrait-artifacts-2.png https://i.postimg.cc/7hhRpcPM/web-build-20230226-o3f4-cheetah-33-en-US-portrait-artifacts-3.png
+https://i.postimg.cc/qqFF0Lzf/web-build-20230226-o3f4-cheetah-33-en-US-portrait-artifacts-4.png https://i.postimg.cc/4NKMPrSX/web-build-20230226-o3f4-cheetah-33-en-US-portrait-artifacts-5.png https://i.postimg.cc/SQ13WyVZ/web-build-20230226-o3f4-cheetah-33-en-US-portrait-artifacts-6.png
