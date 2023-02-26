@@ -6,8 +6,6 @@
 <h1 align="center">Salamun 'Alaik 👋, Welcome to My Wallet</h1>
 <h3 align="center">A simple wallet application for the Android platform.</h3>
 
-[click me to download the app now!](https://github.com/fruzelee/my-wallet/releases/download/v1.0/my-wallet-v1.0.apk)
-
 # Wallet App
 
 This is an Android application developed using Kotlin, Android SDK, Retrofit 2.x.x, Hilt DI, and
@@ -15,6 +13,8 @@ MVVM architecture. The app consists of two fragments - page1 and page2 - impleme
 Android Navigation component. The app also features a username filter logic to ensure that users
 input their username correctly, as well as balance input validation to avoid insufficient balance
 errors.
+
+# [Click me to download the app now!](https://github.com/fruzelee/my-wallet/releases/download/v1.0/my-wallet-v1.0.apk)
 
 # Features
 
