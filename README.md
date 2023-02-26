@@ -3,7 +3,7 @@
     <img src="https://profile-counter.glitch.me/fruzelee/count.svg" />
 </p>
 
-<h1 align="center">Hi 👋, Welcome to My Wallet</h1>
+<h1 align="center">Salamun 'Alaik 👋, Welcome to My Wallet</h1>
 <h3 align="center">A simple wallet application for the Android platform.</h3>
 
 # Wallet App
