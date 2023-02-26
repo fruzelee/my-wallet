@@ -14,7 +14,7 @@ Android Navigation component. The app also features a username filter logic to e
 input their username correctly, as well as balance input validation to avoid insufficient balance
 errors.
 
-***[Click me to download the app now!](https://github.com/fruzelee/my-wallet/releases/download/v1.0/my-wallet-v1.0.apk)***
+*[Download the app now!](https://github.com/fruzelee/my-wallet/releases/download/v1.0/my-wallet-v1.0.apk)*
 
 # Features
 
