@@ -200,3 +200,7 @@ efficiency of the file and makes it easier to maintain.
 
 This commit removes duplicate files for the pin view library, improving the organization and
 reducing redundancy.
+
+- docs: Add app download link to readme.md
+
+This commit adds a new feature to the readme.md file by including the download link for the app.

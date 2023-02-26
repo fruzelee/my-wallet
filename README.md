@@ -6,6 +6,8 @@
 <h1 align="center">Salamun 'Alaik 👋, Welcome to My Wallet</h1>
 <h3 align="center">A simple wallet application for the Android platform.</h3>
 
+<h5 align="center">[click me to download the app now!](https://github.com/fruzelee/my-wallet/releases/download/v1.0/my-wallet-v1.0.apk)</h5>
+
 # Wallet App
 
 This is an Android application developed using Kotlin, Android SDK, Retrofit 2.x.x, Hilt DI, and
